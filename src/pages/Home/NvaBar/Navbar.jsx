@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link,   } from "react-router-dom";
 
 
 const Navbar = () => {
     const link = <>
-        <li> <Link className="rounded-none text-slate-50 font-bold hover:!text-[#A855F7]  hover:border-[#A855F7] hover:border-b-2 transition duration-300" to={'/'}>Home</Link> </li>
-        <li> <Link className="rounded-none text-slate-50 font-bold hover:!text-[#A855F7]  hover:border-[#A855F7] hover:border-b-2 transition duration-300" to={'/'}>Find Doctors</Link> </li>
-        <li> <Link className="rounded-none text-slate-50 font-bold hover:!text-[#A855F7]  hover:border-[#A855F7] hover:border-b-2 transition duration-300" to={'/'}>About Us</Link> </li>
+        <li> <Link className="rounded-none text-black font-bold hover:!text-[#3A643B]  hover:border-[#3A643B] hover:border-b-2 transition duration-300 active:text-red-500 " to={'/'}>Home</Link> </li>
+        <li> <Link className="rounded-none text-black font-bold hover:!text-[#3A643B]  hover:border-[#3A643B] hover:border-b-2 transition duration-300 active:text-red-500 " to={'/'}>Find Doctors</Link> </li>
+        <li> <Link className="rounded-none text-black font-bold hover:!text-[#3A643B]  hover:border-[#3A643B] hover:border-b-2 transition duration-300 active:text-red-500 " to={'/'}>About Us</Link> </li>
+        
+        
     </>
     return (
         <div className='bg-[#FFF7E2] '>
@@ -19,15 +21,17 @@ const Navbar = () => {
                             {link}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
+                    <h2 className="text-2xl font-bold text-[#3A643B] tracking-[5px] ">AMRUTAM </h2>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                    {link}
+                        {link}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="btn-out py-2 px-4 ">Log In</a>
+                    <a className="primary py-2 px-4 ml-2">Sign Up</a>
                 </div>
             </div>
         </div>
