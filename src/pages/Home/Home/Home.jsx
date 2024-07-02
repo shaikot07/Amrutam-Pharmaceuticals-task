@@ -1,9 +1,10 @@
+import Hero from "../Hero/Hero";
 
 
 const Home = () => {
     return (
         <div>
-            <h1 className="text-3xl text-center">this is a home pages </h1>
+            <Hero></Hero>
         </div>
     );
 };
